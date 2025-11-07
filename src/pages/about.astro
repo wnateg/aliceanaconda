@@ -3,16 +3,16 @@ import Layout from '~/layouts/Layout.astro'
 import PageHeader from '~/components/PageHeader.astro'
 import { Image } from 'astro:assets'
 
-import avatar from '~/content/avatar.jpg'
+import me from '~/content/me.jpg'
 import sasha from '~/content/sasha.jpg'
 import server from '~/content/server.jpg'
 ---
 <Layout title="About Me">
   <PageHeader />
   <div class="flex items-center justify-center py-12">
-    <Image src={avatar} alt="My wife" class="rounded-2xl -rotate-3 h-36 md:h-64 w-auto object-cover" />
-    <Image src={sasha} alt="Sasha" class="rounded-2xl rotate-2 h-36 md:h-64 w-auto object-cover -ml-4" />
-    <Image src={server} alt="Homelab" class="rounded-2xl -rotate-2 h-36 md:h-64 w-auto object-cover -ml-4" />
+    <Image src={me} width="500" alt="My wife" class="rounded-2xl -rotate-3 h-36 md:h-64 w-auto object-cover" />
+    <Image src={sasha} width="500" alt="Sasha" class="rounded-2xl rotate-2 h-36 md:h-64 w-auto object-cover -ml-4" />
+    <Image src={server} width="500" alt="Homelab" class="rounded-2xl -rotate-2 h-36 md:h-64 w-auto object-cover -ml-4" />
   </div>
 
   <p class="mb-4">I’m Alice Graham, CTO at Hometown Hero, where I lead engineering, infrastructure, and digital transformation. My work revolves around building scalable systems, automating complex workflows, and bridging the gap between elegant code and practical business needs. Over the years, I’ve worked across full-stack development, cloud architecture, and SaaS automation—always with a focus on creating tools that make technology feel effortless.</p>
